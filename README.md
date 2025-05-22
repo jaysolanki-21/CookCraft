@@ -1,4 +1,4 @@
-git# 🍳 CookCraft — A Modern Vegetarian Recipe Sharing App
+🍳 CookCraft — A Modern Vegetarian Recipe Sharing App
 
 **CookCraft** is a sleek, user-friendly React app for exploring and sharing vegetarian recipes. Whether you're a beginner in the kitchen or a seasoned chef, CookCraft helps you discover delicious meals and contribute your own creations with ease.
 
