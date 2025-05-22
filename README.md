@@ -1,12 +1,69 @@
-# React + Vite
+git# 🍳 CookCraft — A Modern Vegetarian Recipe Sharing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**CookCraft** is a sleek, user-friendly React app for exploring and sharing vegetarian recipes. Whether you're a beginner in the kitchen or a seasoned chef, CookCraft helps you discover delicious meals and contribute your own creations with ease.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- 🏠 **Home Page** — Intro and latest featured recipes  
+- 📋 **All Recipes** — View all vegetarian recipes in card format  
+- 📖 **Recipe Details** — Full list of ingredients, instructions, time, and difficulty  
+- ✍️ **Create Recipe** — Add your own recipe via a smart form  
+- 📢 **Toast Notifications** — Smooth user feedback using React Toastify  
+- 🔄 **Routing** — Seamless navigation using React Router DOM  
+- ✅ **Form Validation** — Built with React Hook Form  
+- 🥬 **Vegetarian Only** — All recipes are strictly plant-based
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Built With
+
+- **React**  
+- **React Router DOM** — Routing between pages  
+- **React Hook Form** — Validated recipe creation  
+- **React Toastify** — User feedback for form actions  
+- **nanoid** — Unique recipe ID generation  
+- **Context API** — App-wide state management
+
+---
+
+## 📄 Pages
+
+- **Home** — Welcome + featured recipes  
+- **About** — Info about CookCraft or your team  
+- **Recipes** — Full recipe list  
+- **Recipe Details** — Complete cooking guide  
+- **Create Recipe** — Form for adding new recipes  
+- **404 Page** — User-friendly fallback page
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/cookcraft.git
+
+# Navigate into the directory
+cd cookcraft
+
+# Install dependencies
+npm install
+
+# Run the development server (Vite or CRA)
+npm run dev  # or `npm start` if using CRA
+```
+
+---
+
+## 🧪 Sample Data Includes
+
+- 10+ fully vegetarian recipes
+- Fields like: title, category, chef, difficulty, ingredients, instructions, prep & cook time, and image URL
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
