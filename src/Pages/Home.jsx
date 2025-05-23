@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <div className={styles.recipecontainer}>
           
-          {recipe.slice(0, 4).map((item, index) => (
+          {recipe.slice(-4).map((item, index) => (
             <RecipeCard key={index} item={item} />
           ))}
          

@@ -1,11 +1,12 @@
-import React, { useContext, useState } from 'react';
-import RecipeCard from '../components/RecipeCard';
-import { RecipeContext } from '../Context/RecipeContext';
-import styles from './Recipe.module.css';
+import React, { useContext, useState } from "react";
+import RecipeCard from "../components/RecipeCard";
+import { RecipeContext } from "../Context/RecipeContext";
+import styles from "./Recipe.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Recipes = () => {
   const { recipe } = useContext(RecipeContext);
-
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
   const recipesPerPage = 8;
 
@@ -20,15 +21,19 @@ const Recipes = () => {
       </div>
 
       <div className={styles.recipelist}>
-        {currentRecipes.map((item, index) => (
-          <RecipeCard key={index} item={item} />
+        {currentRecipes.map((item) => (
+          <RecipeCard
+            key={item.id}
+            item={item}
+            onClick={() => navigate(`/recipes/${item.id}`)}
+          />
         ))}
       </div>
 
       {/* Pagination Controls */}
       <div className={styles.pagination}>
         <button
-          onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
         >
           Previous
@@ -38,14 +43,16 @@ const Recipes = () => {
           <button
             key={i + 1}
             onClick={() => setCurrentPage(i + 1)}
-            className={currentPage === i + 1 ? styles.activePage : ''}
+            className={currentPage === i + 1 ? styles.activePage : ""}
           >
             {i + 1}
           </button>
         ))}
 
         <button
-          onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+          onClick={() =>
+            setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+          }
           disabled={currentPage === totalPages}
         >
           Next

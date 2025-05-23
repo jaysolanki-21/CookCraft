@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Nav.module.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const Navigate = useNavigate();
 
   const getActiveStyle = ({ isActive }) => ({
     fontWeight: isActive ? 'bold' : 'normal',
@@ -31,7 +32,7 @@ const Nav = () => {
         <NavLink to="/about" style={getActiveStyle} className={styles.navLink}>
           About
         </NavLink>
-        <button className={styles.createbtn}>Create New Recipe</button>
+        <button onClick={() => Navigate('/create')} className={styles.createbtn}>Add New Recipe</button>
       </div>
     </div>
   );

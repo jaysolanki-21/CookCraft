@@ -51,14 +51,9 @@
 }
 
 .activePage {
-  background-color: #000;     /* black background */
-  color: #fff;                /* white text for contrast */
+  background-color: #000;     
+  color: #fff;               
   border: 1px solid #000;
   font-weight: bold;
 }
 
-
-/* .pagination button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-} */

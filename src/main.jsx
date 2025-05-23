@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")).render(
   <RecipeProvider>
     <BrowserRouter>
       <App />
-      <ToastContainer />
+      <ToastContainer autoClose={2000} theme="dark" hideProgressBar pauseOnHover closeOnClick  position="bottom-right" />
     </BrowserRouter>
   </RecipeProvider>
 );

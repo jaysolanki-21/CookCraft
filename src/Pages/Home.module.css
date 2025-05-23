@@ -109,6 +109,20 @@
   background-color: #8b4513;
 }
 
+.viewbtn {
+  margin-top: -1rem;
+  padding: 0.8rem 2rem;
+  background-color: #a0522d;
+  color: white;
+  width: 100%;
+  border: none;
+  font-family: 'Cursive', sans-serif;
+  font-size: 1rem;
+  font-family: 'Cursive', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
