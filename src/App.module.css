@@ -6,7 +6,19 @@
 
 .App{
     width: 100%;
-    height: 100vh;
+    min-height: 99.9vh;
     background-image: url('/images/bg.jpg');
     background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .App {
+        background-position: top center;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .App {
+        background-position: top center;
+    }
 }

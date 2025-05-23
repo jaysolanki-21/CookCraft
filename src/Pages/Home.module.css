@@ -1,0 +1,135 @@
+.homecontainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+.lefthome {
+  width: 42%;
+}
+
+.righthome {
+  width: 58%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hometitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #a0522d;
+}
+
+.titlecontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipecontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.recipe {
+  background-color: #fdf6e3;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.recipe:hover {
+  transform: translateY(-5px);
+}
+
+.recipeimage {
+  width: 100%;
+  height: 200px;
+  background: #ffebcd;
+  border-bottom: 2px solid #d2691e;
+  border-radius: 1rem 1rem 0 0;
+  background-image: url('/default-food.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.recipeimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipedetails {
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Cursive', sans-serif;
+}
+
+.recipedetails h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #8b0000;
+}
+
+.recipedetails p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+
+.exploreButton {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-family: 'Cursive', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exploreButton:hover {
+  background-color: #8b4513;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .lefthome {
+    display: none;
+  }
+
+  .righthome {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .homecontainer {
+    flex-direction: column;
+  }
+
+  .recipecontainer {
+    grid-template-columns: 1fr;
+  }
+
+  .hometitle {
+    font-size: 2rem;
+  }
+}
