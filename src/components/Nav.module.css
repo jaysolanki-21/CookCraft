@@ -66,6 +66,15 @@
 }
 
 @media (max-width: 768px) {
+  *{
+    font-family: sans-serif;
+  }
+
+  .brand {
+    font-size: 2rem;
+    font-family: sans-serif;
+  }
+
   .navContainer {
     height: auto;
     flex-direction: column;
@@ -98,6 +107,7 @@
   .navLink,
   .createbtn {
     margin: 0.5rem 0;
+    font-family: serif;
   }
 
   .menuToggle {
