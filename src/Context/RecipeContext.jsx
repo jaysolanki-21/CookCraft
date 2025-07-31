@@ -278,6 +278,7 @@ export const RecipeProvider = ({children}) => {
     cookTime: "30 min"
   }
 ]);
+// localStorage.setItem('recipes', JSON.stringify(recipe));
     return (
         <RecipeContext.Provider value={{recipe,setRecipe}}>
             {children}

@@ -38,6 +38,7 @@ const CreateRecipe = ({ onSubmitRecipe }) => {
     };
     formatted.id = nanoid();
     setRecipe([...recipe, formatted]);
+    localStorage.setItem('recipes', JSON.stringify([...recipe, formatted]));
 
     if (onSubmitRecipe) {
       onSubmitRecipe(formatted);
