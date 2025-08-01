@@ -4,6 +4,12 @@
 
 ---
 
+## 🌐 Live Preview
+
+🔗 [**Visit CookCraft Live**](https://cookcraftbyjay.netlify.app/)
+
+---
+
 ## 🌟 Features
 
 - 🏠 **Home Page** — Intro and latest featured recipes  
